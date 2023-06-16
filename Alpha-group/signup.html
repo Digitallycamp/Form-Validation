@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .message{
+            display: none;
+        }
+        
+        .success{
+                color: green;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center w-full h-screen bg-zinc-100">
+        <div class="w-2/5 bg-white p-4 rounded-lg flex flex-col gap-y-12 shadow-lg">
+            <h1 class="text-center text-3xl  ">Sign up</h1>
+            <div class="message "></div>
+            <form class="flex flex-col gap-y-5 signupForm">
+                <input class="h-12 bg-stone-100 p-4 rounded-lg" type="text" name="username" placeholder="Enter Username" >
+                <input class="h-12 bg-stone-100 p-4 rounded-lg" type="email" name="useremail" placeholder="Enter email" >
+                <input  class="h-12 bg-stone-100 p-4 rounded-lg"  type="password" name="userpass" placeholder="Enter Password" >
+                
+                <div>
+                    <input type="checkbox" name="agree"   >
+                    <label>Agree to our <a href="#">terms and conditions</a></label>
+                </div>
+                <button class="h-12 bg-black text-white text-center py-4 rounded-lg" type="submit">Sign up</button>
+                <p class="text-center">Have an account ? <a class="text-blue-950" href="./index.html">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>
